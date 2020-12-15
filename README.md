@@ -7,8 +7,8 @@ Argv[1] = Prefix
 
 Argv[2] = Path of the file
 
-Argv[3] =  0 if the user wants to see all the words without any interruption
-	   1 if the user wants to enable the step by step option
+Argv[3] =  0, if the user wants to see all the words without any interruption.
+1, if the user wants to enable the step by step option.
 
 ## Outputs
 One or more words that start with the given prefix.
@@ -30,7 +30,7 @@ Create a text file and write “ hi hey ” in it.
 ### Step 2
 Run the program: “ word_finder h ./text.txt 1”
 ### Step 3	 
-The program asks you to know if you want to continue the search or not. Change the text file in a way to overflow the buffer and rewrite the main’s return address. You can put a shellcode in the buffer and change the main’s return address in a way that the program’s flow returns to the shellcode, and runs it. The return address is in 0x7fffffffe428 address, and the buffer is in 0x7fffffffe170. Therefore, you have to put the buffer with some nop sleds (‘\x90’) and shellcode (‘\x48\x31\xd2\x48\xbb\x2f\x2f\x62\x69\x6e\x2f\x53\x48\x48\xc1\xeb\x08\x53\x48\x89\xe7\x50\x57\x48\x89\xe6\xb0\x3b\x0f\x05\’).
+The program asks you to know if you want to continue the search or not. Change the text file in a way to overflow the buffer and rewrite the main’s return address. You can put a shellcode in the buffer and change the main’s return address in a way that the program’s flow returns to the shellcode, and runs it. The return address is in 0x7fffffffe428 address, and the buffer is in 0x7fffffffe170. Therefore, you have to put the buffer with some nop sleds (‘\x90’) and shellcode 
 **_NOTE:_** The numbers are different in different systems.
 ### Step 4
 Finally, provide a bad response at least once.
