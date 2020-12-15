@@ -4,12 +4,14 @@ Word_Finder is a program that finds the words in a file that starts with the use
 
 ## Inputs
 Argv[1] = Prefix
+
 Argv[2] = Path of the file
+
 Argv[3] =  0 if the user wants to see all the words without any interruption
-		   1 if the user wants to enable the step by step option
+	   1 if the user wants to enable the step by step option
 
 ## Outputs
-	One or more words that start with the given prefix.
+One or more words that start with the given prefix.
 
 
 ## What are the vulnerabilities?
